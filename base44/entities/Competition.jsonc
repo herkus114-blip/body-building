@@ -1,0 +1,62 @@
+{
+  "name": "Competition",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "World",
+        "European",
+        "Professional",
+        "National",
+        "Regional",
+        "Adaptive"
+      ]
+    },
+    "sport": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "location": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "registration_open": {
+      "type": "boolean",
+      "default": true
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "participants_count": {
+      "type": "integer",
+      "default": 0
+    },
+    "entry_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "name",
+    "type",
+    "date",
+    "location"
+  ]
+}
