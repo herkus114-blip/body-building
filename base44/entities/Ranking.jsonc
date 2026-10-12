@@ -1,0 +1,36 @@
+{
+  "name": "Ranking",
+  "type": "object",
+  "properties": {
+    "athlete_name": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "federation": {
+      "type": "string"
+    },
+    "sport": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "points": {
+      "type": "number"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "results": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "athlete_name",
+    "country",
+    "sport",
+    "points"
+  ]
+}
