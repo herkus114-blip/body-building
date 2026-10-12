@@ -1,0 +1,34 @@
+{
+  "name": "HallOfFame",
+  "type": "object",
+  "properties": {
+    "athlete_name": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "sport": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "achievement": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "athlete_name",
+    "country",
+    "sport",
+    "year",
+    "achievement"
+  ]
+}
