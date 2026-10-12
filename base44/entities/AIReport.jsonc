@@ -1,0 +1,63 @@
+{
+  "name": "AIReport",
+  "type": "object",
+  "properties": {
+    "report_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "male",
+        "female",
+        "other"
+      ]
+    },
+    "age": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "number"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "goals": {
+      "type": "string"
+    },
+    "body_score": {
+      "type": "number"
+    },
+    "athlete_match": {
+      "type": "number"
+    },
+    "weight_recommendation": {
+      "type": "string"
+    },
+    "training_guidance": {
+      "type": "string"
+    },
+    "nutrition_guidance": {
+      "type": "string"
+    },
+    "suggested_category": {
+      "type": "string"
+    },
+    "suggested_program": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "report_id",
+    "gender",
+    "age",
+    "height",
+    "weight"
+  ]
+}
